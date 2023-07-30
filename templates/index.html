@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Translation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="chatbot-wrapper">
+        <div class="bot-image">
+            <img src="static/images/robot1.png" height="500px" width="500px">
+        </div>
+        <div class="chatbot-container">
+            <div class="sticky-heading">
+                <h1 class="heading">Celebot: Your Personal Assistant</h1>
+            </div>
+            <div id="chatbox" class="chatbox-container">
+                <div class="message user-message">
+                    <p>Hello!</p>
+                </div>
+                <div class="message bot-message">
+                    <p>Hi there! How can I help you today?</p>
+                </div>
+            </div>
+
+            <form id="translate-form" class="form-container">
+                <input type="text" id="english-input" name="english-input" placeholder="Enter your message..."
+                    class="user-input">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

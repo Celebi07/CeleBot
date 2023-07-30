@@ -1,0 +1,293 @@
+/* css/style.css */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/back1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    /* opacity: 0.5; Adjust the opacity as desired */
+}
+
+.chatbot-wrapper {
+    display: flex;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Bot image */
+.bot-image {
+    display: flex;
+    margin: 70px auto;
+    padding: 20px;
+}
+
+/* Sticky heading */
+.sticky-heading {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(138, 43, 226, 0.8), rgba(255, 20, 147, 0.8));
+    color: #ffffff;
+    padding: 20px;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Chatbot container */
+.chatbot-container {
+    position: relative;
+    margin: 100px auto;
+    /* Centered with top and bottom margin */
+    align-items: center;
+    width: 600px;
+    overflow: hidden;
+    /* padding: 20px; */
+    max-width: 600px;
+    background-image: url('../images/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 400px;
+    overflow-y: auto;
+    flex-direction: row-reverse;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 3.5%;
+    border: solid;
+}
+
+
+/* Chat messages */
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.user-input {
+    background-color: #0084ff;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 10px;
+    max-width: 70%;
+    align-self: flex-start;
+    animation: fadeInRight 0.5s ease-in-out;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.user-message {
+    background-color: #0084ff;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    align-self: flex-start;
+    animation: fadeInRight 0.5s ease-in-out;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Bot message */
+.bot-message {
+    background-color: #e5e5ea;
+    color: #333;
+    align-self: flex-start;
+    padding: 10px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    animation: fadeInLeft 0.5s ease-in-out;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation for bot message */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* CSS/style.css */
+/* Form container */
+.form-container {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    background: linear-gradient(to Left, rgba(138, 43, 226, 0.8), rgba(255, 20, 147, 0.8));
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Input field */
+.form-container input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    margin-right: 5px;
+    background: transparent;
+    /* color: #333;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); */
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Send button */
+.form-container button {
+    position: relative;
+    display: flex;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Apply more properties to make it attractive */
+/* .form-container input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #7b41e2;
+} */
+
+/* .form-container button:hover {
+    background: linear-gradient(to right, #9f56ff, #6234f4);
+}
+
+.form-container button:active {
+    background: linear-gradient(to right, #6234f4, #9f56ff);
+}
+
+.form-container button:disabled {
+    background: linear-gradient(to right, #ccc, #f3f3f3);
+    cursor: not-allowed;
+}
+
+.form-container input::placeholder {
+    color: #999;
+}
+
+.form-container input::-webkit-input-placeholder {
+    color: #999;
+}
+
+.form-container input::-moz-placeholder {
+    color: #999;
+}
+
+.form-container input:-ms-input-placeholder {
+    color: #999;
+}
+
+.form-container input:-moz-placeholder {
+    color: #999;
+} */
+
+
+/* CSS/style.css */
+.bot-message,
+.user-message {
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.bot-message {
+    background-color: transparent;
+    color: white;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.user-message {
+    background-color: transparent;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.bot-message p,
+.user-message p {
+    margin: 0;
+}
+
+.bot-message:hover,
+.user-message:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bot-message::selection,
+.user-message::selection {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.bot-message::-moz-selection,
+.user-message::-moz-selection {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}

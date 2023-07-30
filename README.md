@@ -1,7 +1,5 @@
 # CeleBot
 
-![CeleBot](chatbot_image.jpg)
-
 ## Introduction
 
 This project is a custom chatbot implementation that utilizes Transformers, a powerful natural language processing model, to understand and generate human-like responses. The chatbot is integrated into a website developed using HTML, CSS, and JavaScript, making it accessible to users through their web browsers.
